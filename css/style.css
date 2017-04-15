@@ -37,6 +37,19 @@ h3{
 	text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
 }
 
+h4{
+	font-family: verdana;
+	color: #004669;
+	margin-left: 20px;
+	font-size: 20px;
+	text-align: center;
+	-webit-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+	-ms-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+	-o-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+	-moz-text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+	text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+}
+
 header{
 	width: 1000px;
 	height: 300px;
@@ -50,21 +63,24 @@ nav{
 	background: #ffffff;
 	border: solid;
 	border-color: #004669;
-	border-radius: 10px;
+	border-radius: .25em;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 }
 
 ul{
 	margin: auto;
-	padding-top: 4px;
+	padding-top: 10px;
 }
 
 li{
+	/*display: inline-block;
+	border: 2px solid;
+	padding: .25em;*/
 	float: left;
 	list-style-type: none;
 	padding: 10px;
-	margin: 4px;
+	margin: .05em;
 }
 
 a{
@@ -78,7 +94,7 @@ section{
 	background: white;
 	border: solid;
 	border-color: #004669;
-	height: 600px;
+	height: 700px;
 	float: left;
 	margin-top: 20px;
 	border-radius: 10px;
@@ -91,7 +107,7 @@ aside{
 	background: white;
 	border: solid;
 	border-color: #004669;
-	height: 600px;
+	height: 700px;
 	float: left;
 	margin-left: 20px;
 	margin-top: 20px;
@@ -119,4 +135,15 @@ p{
 	text-align: justify;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+img.mediana{
+ 	width: 100px;
+ 	height: 110px;
+ 	float: left;
+}
+
+p.saltolinea {
+	 line-height: 5px;
+	 /*float: justify;*/
 }
