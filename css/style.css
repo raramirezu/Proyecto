@@ -68,15 +68,16 @@ nav{
 	border-top-left-radius: 0;
 }
 
-ul{
+/*ul{
 	margin: auto;
 	padding-top: 10px;
+	list-style: none;
 }
 
 li{
-	/*display: inline-block;
-	border: 2px solid;
-	padding: .25em;*/
+	display: inline-block;
+	/*border: 2px solid;
+	padding: .25em;
 	float: left;
 	list-style-type: none;
 	padding: 10px;
@@ -87,7 +88,42 @@ a{
 	text-decoration: none;
 	font-size: 25px;
 	color: #004669;
-}
+}*/
+
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
 
 section{
 	width: 700px;
