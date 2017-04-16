@@ -70,60 +70,83 @@ nav{
 
 ul{
 	margin: auto;
-	padding-top: 10px;
+	padding-top: .5em;
 	list-style: none;
+	height: .5em;
+	
+}
+
+/*	float: left;
+}
+
+#contenedor li a{
+	background-color:#000;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}*/
+
+li a:hover {
+	background-color:#434343;
+}
+
+li ul {
+	display:none;
+	position:absolute;
+	min-width:100px;
+}
+
+li:hover > ul {
+	display:block;
+}
+
+li ul li {
+	position:relative;
+}
+
+li ul li ul {
+	right:-100px;
+	top:0px;
 }
 
 li{
 	/*display: inline-block;
 	border: 2px solid;
 	padding: .25em;*/
+	background: #004669;
+	border-radius: .25em;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	cursor: pointer;
+	display: block;
 	float: left;
-	list-style-type: none;
+	line-height: 2.5em;
+	margin-right: .5em;
+	padding: .25em;
+	text-align: left;
+	/*list-style-type: none;
 	padding: 10px;
-	margin: .05em;
+	margin: .05em;*/
 }
 
 a{
 	text-decoration: none;
-	font-size: 25px;
-	color: #004669;
+	font-size: 2em;
+	color: #ffffff;
 }
 
-			.nav > li {
-				float:left;
-			}
-			
-			.nav li a {
-				background-color:#000;
-				color:#fff;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
-			
-			.nav li a:hover {
-				background-color:#434343;
-			}
-			
-			.nav li ul {
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.nav li:hover > ul {
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-			}
-			
-			.nav li ul li ul {
-				right:-140px;
-				top:0px;
-			}
+#contenedor li:hover a {
+	background: #ddd;  /* Fondo de las pestañas al pasar el cursor por encima */
+	color: #666;  /* Color del texto de las pestañas al pasar el cursor por encima */
+}
+
+#contenedor ul:checked + li {
+	background: #f1f1f1;  /* Fondo de las pestañas al presionar */
+	color: #444; /* Color de las pestañas al presionar */
+	position: relative;
+	z-index: 6;
+}
 
 section{
 	width: 700px;
